@@ -1,0 +1,68 @@
+* {
+    /* cursor: none */
+}
+
+body {
+    font-family: 'segoe ui light';
+}
+
+#demo {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.item,
+#next,
+#prev,
+#close {
+    cursor: pointer;
+}
+
+.item {
+    background-color: #09c;
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.caption {
+    background-color: #fff;
+    width: 80%;
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    padding: 10px;
+}
+
+#lightbox-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.show {
+    display: flex !important;
+}
+
+#lightbox-item {
+    width: 50%;
+    height: 500px;
+    background-image: url(../images/portfolio-1.jpg);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
